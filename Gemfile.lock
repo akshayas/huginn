@@ -337,6 +337,10 @@ GEM
     httpclient (2.8.3)
     huginn_agent (0.4.0)
       thor
+    huginn_todoist_agent (0.6.0)
+      huginn_agent (~> 0)
+      ruby-todoist-api-v7 (~> 1.0)
+      todoist_querynaut (~> 0.1)
     hypdf (1.0.10)
       httmultiparty (~> 0.3)
       httparty (~> 0.13)
@@ -516,6 +520,7 @@ GEM
       ffi (>= 0.5.0, < 2)
     rb-kqueue (0.2.4)
       ffi (>= 0.5.0)
+    rb-readline (0.5.5)
     representable (3.0.4)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -561,6 +566,7 @@ GEM
       rest-client
     ruby-growl (4.1)
       uuid (~> 2.3, >= 2.3.5)
+    ruby-todoist-api-v7 (1.0.2)
     rufus-scheduler (3.4.2)
       et-orbi (~> 1.0)
     safe_yaml (1.0.4)
@@ -616,6 +622,9 @@ GEM
     tilt (2.0.7)
     tins (1.15.0)
     to_regexp (0.2.1)
+    todoist_querynaut (0.1.4)
+      ruby-todoist-api-v7 (~> 1.0)
+      treetop (~> 1.5)
     treetop (1.6.9)
       polyglot (~> 0.3)
     twilio-ruby (3.11.6)
@@ -710,6 +719,7 @@ DEPENDENCIES
   httmultiparty (~> 0.3.16)
   httparty (~> 0.13)
   huginn_agent (~> 0.4.0)
+  huginn_todoist_agent
   hypdf (~> 1.0.10)
   jquery-rails (~> 4.2.1)
   json (~> 1.8.1)
@@ -743,6 +753,7 @@ DEPENDENCIES
   rails-controller-testing
   rails-html-sanitizer (~> 1.0.4)
   rb-kqueue (>= 0.2)
+  rb-readline
   rr
   rspec (~> 3.7)
   rspec-collection_matchers (~> 1.1.0)

@@ -140,6 +140,7 @@ group :development do
   gem 'rack-livereload', '~> 0.3.16'
   gem 'letter_opener_web', '~> 1.3.1'
   gem 'web-console', '>= 3.3.0'
+  gem 'rb-readline'
 
   gem 'capistrano', '~> 3.11.0'
   gem 'capistrano-rails', '~> 1.1'
